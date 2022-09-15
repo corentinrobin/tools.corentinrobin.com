@@ -1,0 +1,32 @@
+/* Auteur : Corentin Robin */
+
+main.home
+{
+    text-align : center;
+}
+
+main.home > div
+{
+    display : inline-block;
+    width : 300px;
+    height: 300px;
+    border : solid 3px #B89824;
+    padding : 20px;
+    margin : 10px;
+    vertical-align: middle;
+    text-align : left;
+    position : relative;
+    transition : 200ms;
+    cursor : pointer;
+}
+
+main.home > div:hover
+{
+    background-color : #3A6379;
+}
+
+main.home > div > span
+{
+    font-size : 25px;
+    font-weight : bold;
+}

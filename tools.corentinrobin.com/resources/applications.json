@@ -1,0 +1,50 @@
+[
+    {
+        "title" : "Filler text generator",
+        "text" : "To generate customisable random filler texts, for developers.",
+        "category" : "programming",
+        "path" : "filler"
+    },
+    {
+        "title" : "Encrypter",
+        "text" : "A tool to perform encryption, using a symmetrical-key algorithm (based on the simple XOR chipher).",
+        "category" : "encryption",
+        "path" : "encrypter"
+    },
+    {
+        "title" : "Calendar",
+        "text" : "A simple calendar, to stay on schedule.",
+        "category" : "table",
+        "path" : "calendar"
+    },
+    {
+        "title" : "Letter mixer",
+        "text" : "A tool to mix letters in a text, using a permutation key.",
+        "category" : "encryption",
+        "path" : "mixer"
+    },
+    {
+        "title" : "Text analyser",
+        "text" : "To show all sort of information about a text, letters frequency, words count etc.",
+        "category" : "analysis",
+        "path" : "analyser"
+    },
+    {
+        "title" : "Units converter",
+        "text" : "To convert stones to tons, inches to kilometers, or any other exotic unit to an other exotic one.",
+        "category" : "calculation",
+        "path" : "converter"
+    },
+    {
+        "title" : "Uglifier",
+        "text" : "To uglify your JavaScript code.",
+        "category" : "programming",
+        "path" : "uglifier"
+    },
+    {
+        "title" : "Rubbish generator",
+        "text" : "To write random sentences, just for fun.",
+        "category" : "miscellaneous",
+        "path" : "rubbisher"
+    }
+]

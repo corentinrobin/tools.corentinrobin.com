@@ -1,0 +1,6 @@
+/* Auteur : Corentin Robin */
+
+main.converter select,main.converter input[type="text"]
+{
+    width : 290px;
+}

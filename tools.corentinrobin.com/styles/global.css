@@ -1,0 +1,425 @@
+/* Auteur : Corentin Robin */
+
+@font-face
+{
+	font-family : Forum-Regular;
+	src : url(../fonts/TitilliumWeb-ExtraLight.ttf);
+}
+
+@font-face
+{
+	font-family : Inconsolata-Regular;
+	src : url(../fonts/Inconsolata-Regular.ttf);
+}
+
+@media screen and (max-width: 1199px)
+{
+    header
+    {
+        padding : 10px !important;
+    }
+
+    main
+    {
+        width : 100% !important;
+        padding : 0 10px;
+    }
+
+    nav.shrinked
+    {
+        top : 60px !important;
+    }
+
+    table
+    {
+        width : 100% !important;
+    }
+
+    div.frequencies > div
+    {
+        display : block !important;
+        margin-right : 0 !important;
+    }
+
+    div.month
+    {
+        display : block !important;
+        width : 100% !important;
+    }
+    
+    p
+    {
+        text-align : justify;
+    }
+
+    span.button,input
+    {
+        width : 100%;
+        text-align : center;
+        margin : 5px 0;
+    }
+
+    h1
+    {
+        font-size : 25px;
+    }
+
+    h2
+    {
+        font-size : 18px;
+    }
+}
+
+*
+{
+    box-sizing : border-box;
+}
+
+body
+{
+    margin : 0;
+    padding : 0;
+    width : 100%;
+    height : 100%;
+}
+
+body
+{
+    font-family : Forum-Regular;
+    font-size : 16px;
+    letter-spacing : 1px;
+    background-color : #616765;
+    color : white;
+}
+
+header
+{
+    border-bottom : solid 2px #B89824;
+    font-size : 28px;
+    padding : 10px 20px;
+    left : 0;
+    top : 0;
+    width : 100%;
+    position : fixed;
+    background-color : #616765;
+    transition : 200ms;
+    box-shadow : 0 0 2px black;
+    z-index : 1;
+}
+
+header > span
+{
+    float : right;
+    cursor : pointer;
+}
+
+header img
+{
+    width : 25px;
+    transition : 200ms;
+}
+
+header.shrinked
+{
+    border-bottom : solid 1px #B89824;
+    font-size : 25px;
+    padding : 5px 10px;
+    opacity : 0.95;
+}
+
+header.shrinked img
+{
+    width : 20px;
+    transition : 200ms;
+}
+
+header a,header a:visited
+{
+    color : white;
+    text-decoration : none;
+}
+
+footer
+{
+    border-top : solid 1px #B89824;
+    font-size : 14px;
+    text-align : right;
+    padding : 2px 10px;
+    position : fixed;
+    width : 100%;
+    left : 0;
+    bottom : 0;
+    background-color : #616765;
+    opacity : 0.95;
+}
+
+nav.visible
+{
+    right : 0;
+}
+
+nav
+{
+    position : fixed;
+    right : -240px;
+    top : 65px;
+    width : 240px;
+    background-color : #616765;
+    border-left : solid 2px #B89824;
+    border-bottom : solid 2px #B89824;
+    transition : 200ms;
+    box-shadow : -1px 1px 2px -1px black;
+    z-index : 1;
+}
+
+nav.shrinked
+{
+    top : 50px;
+    border-left : solid 1px #B89824;
+    border-bottom : solid 1px #B89824;
+}
+
+nav > a
+{
+    display : block;
+    padding : 10px 20px;
+}
+
+nav > a:hover
+{
+    color : #4D4650 !important;
+    background-color : #B89824;
+}
+
+nav > a > img
+{
+    vertical-align : middle;
+    margin-right : 15px;
+    width : 20px;
+}
+
+.overlay,.dialog
+{
+    display : none;
+}
+
+.overlay.visible,.dialog.visible
+{
+    display : block
+}
+
+.overlay
+{
+    position : fixed;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 100%;
+    background-color : black;
+    opacity : 0.5;
+    z-index : 2;
+}
+
+.dialog
+{
+    position : fixed;
+    left : 50%;
+    top : 50%;
+    transform : translateX(-50%) translateY(-50%);
+    background-color : #4A4E4D;
+    padding : 30px;
+    text-align : center;
+    border : solid 2px #B89824;
+    z-index : 2;
+}
+
+.dialog > div
+{
+    margin-bottom : 30px;
+}
+
+main
+{
+    width : 1200px;
+    margin : 80px auto 50px auto;
+}
+
+h1
+{
+    font-size : 24px;
+    color : #4D4650;
+    background-color : #B89824;
+}
+
+h2
+{
+    font-size : 20px;
+    border-bottom : solid 1px #B89824;
+    color : white;
+}
+
+h3
+{
+    margin-top : 0;
+}
+
+h2 > img
+{
+    vertical-align : -2px;
+    margin-right : 5px;
+}
+
+main a,main a:visited,nav a,nav a:visited
+{
+    color : #E2E2DD;
+    font-weight : bold;
+    text-decoration : none;
+}
+
+p a
+{
+    color : #B89824 !important;
+}
+
+main > div
+{
+    margin : 20px 0;
+}
+
+main > div > div
+{
+    margin : 5px 0;
+}
+
+main > div > div.explanation
+{
+    border-left : solid 5px #B89824;
+    padding-left : 10px;
+}
+
+table
+{
+    border-collapse : collapse;
+}
+
+tr:first-child
+{
+    color : white;
+    font-weight : bold;
+}
+
+div.frequencies > div
+{
+    display : inline-block;
+    margin-right : 50px;
+}
+
+td
+{
+    border : solid 1px #B89824;
+    padding : 10px;
+}
+
+input[type="text"],input[type="number"],textarea,select
+{
+    font-family : Inconsolata-Regular;
+    font-size : 18px;
+    padding : 5px 10px;
+    border : none;
+    background-color : #4A4E4D;
+    color : white;
+}
+
+input[type="number"]
+{
+    width : 5em;
+    text-align : center;
+}
+
+select
+{
+    padding : 5px 10px;
+}
+
+::selection
+{
+    background : #B89824;
+    color : white;
+}
+
+::-moz-selection
+{
+    background : #B89824;
+    color : white;
+}
+
+span.button
+{
+    padding : 5px 10px;
+    display : inline-block;
+    cursor : pointer;
+    color : white;
+    background-color : #3A6379;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+textarea
+{
+    width : 100%;
+    height : 200px;
+    resize : none;
+}
+
+div.month
+{
+    width : 300px;
+    display : inline-block;
+    vertical-align : top;
+    margin : 10px 0;
+}
+
+h3.year
+{
+    text-align: center;
+    border-bottom: solid 2px #B89824;
+}
+
+div.month > b
+{
+    text-transform : capitalize;
+}
+
+div.month > div
+{
+    text-align : justify;
+}
+
+div.month > div > span.day
+{
+    display : inline-block;
+    margin : 0 2px;
+    width : 30px;
+    cursor : pointer;
+}
+
+div.month > div > span.day:hover
+{
+    outline : solid 1px #B89824;
+}
+
+div.month > div > span.today.day
+{
+    outline : solid 1px #B89824;
+    background-color : #3A6379;
+}
+
+div.month > div > span.day > span:first-child
+{
+    font-size : 8px;
+    color : #B89824;
+}
